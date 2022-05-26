@@ -176,7 +176,7 @@ window.onload = function(){
       if( xhr.readyState === 4 && xhr.status === 200) {
 
         // (5) 取得したレスポンスをページに表示
-        const words = this.responseText.split("\r\n");
+        const words = this.responseText.split("\n");
         console.log(words)
         let cnt = 0;
 
@@ -211,7 +211,7 @@ function getTherapistData(filePath2 , timezone,reserve){
     if( xhr2.readyState === 4 && xhr2.status === 200) {
 
       // (5) 取得したレスポンスをページに表示
-      const therapist = this.responseText.split("\r\n");
+      const therapist = this.responseText.split("\n");
       console.log(therapist)
 
       if(therapist[2]=="新人"){
