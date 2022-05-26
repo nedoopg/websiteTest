@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Oleo+Script+Swash+Caps&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Serif:ital@1&family=Oleo+Script+Swash+Caps&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Serif:ital@1&family=Oleo+Script+Swash+Caps&family=Playfair+Display:ital,wght@1,400;1,800&display=swap" rel="stylesheet">-->
+
+    <!-- Bootstrap core CSS -->
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/dist/css/bootstrap.min.js">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./carousel.css" rel="stylesheet">
+    <link href="./carousel.rtl.css" rel="stylesheet">
+  </head>
+<body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand font-shoplogo" href="#">Makana a Anela</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./therapist.html">セラピスト</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./price.html">コース</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./reserve.html">予約</a>
+            <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="navbar-brand">連絡先:000-0000-000</a>
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="backgroundImg" style="background-color: #ffffff;">
+  <section class="text-center">
+    <div class="row py-lg-4">
+      <div class="col-lg-8 col-md-8 mx-auto">
+        <h1 class="display-X fw-bold font-shoplogo border-bottom">Makana a Anela</h1>
+        <h2  align="center" class="pb-1">マカナ アネラ</h2>
+          <br>
+            <p align="center"><a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="btn btn-lg btn-primary" data-show-screen-name="false" data-lang="ja" data-show-count="false">Twitterはこちら</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+            <p align="center"><a class="btn btn-lg btn-primary"  href="tel:0000000000">連絡先:0000000000</a></p>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!--<ul>
+    <li>
+      <a>
+        <span class="news">ニュース</span>
+        <time datetime="2019-01-01">[ 2019.01.01 ]</time>
+        <p class="new">ニュースニュースニュースニュースニュース</p>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="news">ニュース</span>
+        <time datetime="2019-01-01">[ 2019.01.01 ]</time>
+        <p class="new">ニュースニュースニュースニュースニュース</p>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="news">ニュース</span>
+        <time datetime="2019-01-01">[ 2019.01.01 ]</time>
+        <p class="old">ニュースニュースニュースニュースニュース</p>
+      </a>
+    </li>
+    <li>
+      <a>
+        <span class="campaign">キャンペーン</span>
+        <time datetime="2019-01-01">[ 2019.01.01 ]</time>
+        <p class="old">ニュースニュースニュースニュースニュース</p>
+      </a>
+    </li>
+  </ul>-->
+  <!--<div class="ui segment" style="margin-bottom: 0em !important;">
+    <div class="ui container">
+      <div class="ui grid">
+          <div class="sixteen wide column">
+              <div class="ui three stackable cards">
+                  <div class="card">
+                      <div class="ui left piled segment">
+                          <img src="https://semantic-ui.com/images/avatar2/large/matthew.png" class="ui tiny left floated image">
+                          <h3 class="ui header text-center" style="margin-top: 0px;" >¿Qué es Lorem Ipsum?</h3>
+                          <div class="floated right text-center description">
+                              Lorem ipsum dolor sit amet, epicuri recteque mel in. Summo senserit interesset ea mea. Lorem suscipiantur vel id. Dicta nostro comprehensam te vim, falli aperiri lobortis mei et. An sanctus ceteros pri, possit rationibus accommodare vix ex.                
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="ui left piled segment">
+                          <img src="https://semantic-ui.com/images/avatar2/large/matthew.png" class="ui tiny left floated image">
+                          <h3 class="ui header text-center" style="margin-top: 0px;" >¿Qué es Lorem Ipsum?</h3>
+                          <div class="floated right text-center description">
+                              Lorem ipsum dolor sit amet, epicuri recteque mel in. Summo senserit interesset ea mea. Lorem suscipiantur vel id. Dicta nostro comprehensam te vim, falli aperiri lobortis mei et. An sanctus ceteros pri, possit rationibus accommodare vix ex.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="ui left piled segment">
+                          <img src="https://semantic-ui.com/images/avatar2/large/matthew.png" class="ui tiny left floated image">
+                          <h3 class="ui header text-center" style="margin-top: 0px;" >¿Qué es Lorem Ipsum?</h3>
+                          <div class="floated right text-center description">
+                              Lorem ipsum dolor sit amet, epicuri recteque mel in. Summo senserit interesset ea mea. Lorem suscipiantur vel id. Dicta nostro comprehensam te vim, falli aperiri lobortis mei et. An sanctus ceteros pri, possit rationibus accommodare vix ex.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>-->
+  
+  <div class="container px-1 py-2" id="featured-3">
+    <h2  align="center" class="pb-2 border-bottom">INFO</h2>
+  </div>
+  <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!--<h1>新人情報</h1>-->
+    <div class="carousel-inner">
+      <div class="carousel-item active" align="center">
+        <!--<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>-->
+        <!--<div class="d-block w-100" style="background-color: #777;" text-align="center" >-->
+        <div class="d-block w-100" text-align="center" >
+          <img src="./info/openEvent.jpg" alt="..." class="d-block w-100 img-fluid" style="max-width: 800px;">
+        </div>  
+        <!--<div class="carousel-caption">
+          <img src="./info/open.png"alt="..." class="d-block w-100 img-fluid"  style="max-width: 800px;">
+        </div>-->
+      </div>
+        <!--
+          <span style="font-size:22px"><strong>【本日のご案内状況】</strong></span><br>
+          <span class="container px-1 py-2" style="font-size:16px"><strong>本日も沢山のご予約</strong><br>
+          <strong>誠にありがとうございます。</strong></span><br>
+          <span style="color:#ff0000"><span style="font-size:26px"><strong>予約殺到中!!完売続出!!<br>
+            只今満室続きます!!<br>
+            最短23:15-</strong></span><br>
+            <span style="font-size:26px"><strong>ご案内可能です!!</strong></span>
+          </div>-->
+      </div>
+      <!--<div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        
+        <div class="container">
+          <div class="carousel-caption py-1 image-center">
+            <img src="./img/S__343465988.jpg" alt="Responsive image" class="img-fluid">
+            <h2>Aさん</h2>
+            <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+    -->
+    </div> 
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <section class="py-4 text-center container">
+    <div class="row py-lg-4">
+      <a class="twitter-timeline" data-height="500" href="https://twitter.com/sYeaS3oKBvtmdbs?ref_src=twsrc%5Etfw">Tweets by sYeaS3oKBvtmdbs</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </section>
+  <!-- accounts messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container px-1 py-2" id="featured-3">
+    <h2  align="center" class="pb-2 border-bottom">新人情報</h2>
+  </div>
+
+  <div class="container accounts">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div align="center" class="col-lg-3">
+        <!-- サイズ：1108 * 1478-->
+        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
+
+        
+        <div><img src="./icon/new.png" width="20px"height="20px" alt="Responsive image" class="img-fluid" style="display:inline-block;"><h3 style="display:inline-block;">名前(XX歳)</h3></div>
+        <p>22:00 ~ 26:00</p>
+        <div class="twitterLink" id="twitter1">
+          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+
+  <div class="container px-1 py-2" id="featured-3">
+    <h2  align="center" class="pb-1 border-bottom">セラピスト</h2>
+  </div>
+
+  <div class="container accounts">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div align="center" class="col-lg-3">
+        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
+
+        <h3>名前(XX歳)</h3>
+        <p>22:00 ~ 26:00</p>
+        <div class="twitterLink" id="twitter1">
+          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+      </div><!-- /.col-lg-4 -->
+      <div align="center" class="col-lg-3">
+        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
+
+        <h3>高橋　花子(20歳)</h3>
+        <p>22:00 ~ 26:00</p>
+        <div class="twitterLink" id="twitter2">
+          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div align="center" class="col-lg-3">
+        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
+
+        <h3>高橋　花子(20歳)</h3>
+        <p>22:00~23:00</p>
+        <div class="twitterLink" id="twitter3">
+          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+    <div class="container px-1 py-2" id="featured-3">
+      <h2  align="center" class="pb-1 border-bottom">価格</h2>
+      <table width="100%" cellspacing="0" cellpadding="0" class="data sp-b20">
+        <colgroup>
+          <col width="70%">
+          <col width="30%">
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="border-bottom:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="featurette-heading price_left">ノーマルコース(120分)</span>
+              </div>
+            </td>
+            <td style="border-bottom:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="featurette-heading price_right" width="100%">12000円</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-bottom:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="featurette-heading price_left">プレミアムコース(180分)</span>
+              </div>
+            </td>
+            <td style="border-bottom:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="featurette-heading price_right" width="100%">18000円</span>
+              </div>
+            </td>
+          </tr>
+          <!--<tr >
+            <td style="border-bottom:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="pb-1 featurette-heading price_left">80分</span>
+              </div>
+            </td>
+            <td style="border-bottom:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="featurette-heading price_right" width="100%">1000円</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-bottom:1px solid #3f3f3f; background-color: darkgoldenrod;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="featurette-heading price_left">延長(30分)</span>
+              </div>
+            </td>
+            <td style="border:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span align="right" class="featurette-heading price_right" width="100%">1000円</span>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-bottom:1px solid #3f3f3f; background-color: darkgoldenrod;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span class="featurette-heading price_left">各オプション</span>
+              </div>
+            </td>
+            <td style="border:1px solid #3f3f3f;">
+              <div class="d-flex justify-content-between align-items-center price">
+                <span align="right" class="featurette-heading price_right" width="100%">10000円</span>
+              </div>
+            </td>
+          </tr>-->
+        </tbody>
+      </table>
+      <p align="center"><a class="btn btn-lg btn-primary"  href="./price.html">料金詳細</a></p>
+    </div>
+
+
+    <div class="container px-1 py-2" id="featured-3">
+      <h2  align="center" class="pb-2 border-bottom">アドレス</h2>
+    </div>
+
+    <div class="container accounts">
+      <div class="row featurette">
+        <div class="order-md-1" width="100%">
+          <h2 class="featurette-heading"></h2>
+          <p class="lead">東京都立川駅近辺出張致します(要テキスト相談)</p>
+          <p class="lead">TEL:0000000000</p>
+        </div>
+        <!--<div class="col-md-5 order-md-1">-->
+        <div class="order-md-1" width="100%">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.1503035818478!2d139.41155211562702!3d35.69791873666321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e17afbcab5c9%3A0x973b8c5f29104899!2z56uL5bed6aeF!5e0!3m2!1sja!2sjp!4v1652796140545!5m2!1sja!2sjp" width="100%" height="aute" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <!--<footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+  -->
+</main>
+
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

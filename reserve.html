@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/dist/css/bootstrap.min.js">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand font-shoplogo" href="#">Makana a Anela</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./therapist.html">セラピスト</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./price.html">コース</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./reserve.html">予約</a>
+            <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="navbar-brand">連絡先:000-0000-000</a>
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div class="container px-1 py-2" id="featured-3">
+    <h2  align="center" class="pb-1 border-bottom">予約</h2>
+  </div>
+
+  <div align="center" style="max-width:1200px;"class="container">
+    <input style="margin-top:4px;" type="button" align="center" class="btn btn-active btn-lg btn-primary" value="05/02(月)" id="0" onclick="test1(this.id)"></input>
+    <input style="margin-top:4px;" type="button" align="center" class="btn btn-passive btn-lg btn-primary" value="05/03(火)" id="1" onclick="test1(this.id)"></input>
+    <input style="margin-top:4px;" type="button" align="center" class="btn btn-passive btn-lg btn-primary" value="05/04(水)" id="2" onclick="test1(this.id)"></input>
+    <input style="margin-top:4px;" type="button" align="center" class="btn btn-passive btn-lg btn-primary" value="05/05(木)" id="3" onclick="test1(this.id)"></input>
+    <input style="margin-top:4px;" type="button" align="center" class="btn btn-passive btn-lg btn-primary" value="05/06(金)" id="4" onclick="test1(this.id)"></input>
+    <input style="margin-top:4px;" type="button" align="center" class="btn btn-passive btn-lg btn-primary" value="05/07(土)" id="5" onclick="test1(this.id)"></input>
+    <input style="margin-top:4px;" type="button" align="center" class="btn btn-passive  btn-lg btn-primary" value="05/08(日)" id="6" onclick="test1(this.id)"></input>
+  </div><!-- /.row -->
+
+  <div class="container">
+    <!-- Three columns of text below the carousel -->
+    <div class="row" id="mainDiv">
+      <div align="center" class="col-lg-3">
+        <a  href="./therapistDetail.html">
+          <img src="./img/sampleA.png" width="200px"height="266px" alt="Responsive image" class="img-fluidhref">
+        </a>
+
+        <h4>高橋　花子(20歳)</h4>
+        <p>予約満員</p>
+        <p>22:00 ~ 26:00</p>
+      </div><!-- /.col-lg-4 -->
+      <div align="center" class="col-lg-3">
+        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
+
+        <h3>高橋　花子(20歳)</h3>
+        <p>22:00~23:00</p>
+        <p>予約可</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
+
+<script>
+window.onload = function(){
+  test1(0);
+}
+
+  function test1(e){
+    console.log(e); //test1と表示される
+    var now = new Date();
+    now.setDate(now.getDate() + parseInt(e));
+    var Hour = now.getHours();
+    var Day = ("0"+now.getDate()).slice(-2);
+    var Month =  ("0"+(now.getMonth() + 1)).slice(-2);
+
+    const reader = new FileReader();
+    getTxtData( Month+""+Day+".txt");	
+
+    for(let j=0;j<7;j++){
+      if (j != e){
+        let btnElement = document.getElementById(j);
+        btnElement.style.backgroundColor = '#ddd';
+        btnElement.style.color = '#5a5a5a';
+        btnElement.style.borderColor = '#5a5a5a';
+      }
+      else
+      {
+        let btnElement = document.getElementById(j);
+        btnElement.style.backgroundColor = '#0d6efd';
+        btnElement.style.color = '#fff';
+        btnElement.style.borderColor = '#0d6efd';
+      }
+    }
+  }
+
+  function getTxtData(filePath){
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('get', "./day/"+filePath);
+    xhr.send();
+
+    xhr.onreadystatechange = function() {
+
+      // (4) 通信が正常に完了したか確認
+      if( xhr.readyState === 4 && xhr.status === 200) {
+
+        // (5) 取得したレスポンスをページに表示
+        const words = this.responseText.split("\r\n");
+        console.log(words)
+        let cnt = 0;
+
+        //要素削除
+        var mainElement = document.getElementById('mainDiv');
+        while( mainElement.firstChild ){
+          mainElement.removeChild( mainElement.firstChild );
+        }
+
+        // 好きなように処理します。
+        for (let i = 0; i < words.length; i++) {
+          if(words.length >= (i+3))
+          {
+            getTherapistData( words[i]+".txt" , words[i+1],words[i+2]);	
+          }
+          i+=3;
+          cnt++;
+        }
+      }
+    }
+  }
+function getTherapistData(filePath2 , timezone,reserve){
+  let nameElement = '';
+
+  const xhr2 = new XMLHttpRequest();
+  xhr2.open('get', "./member/"+filePath2);
+  xhr2.send();
+
+  xhr2.onreadystatechange = function() {
+
+    // (4) 通信が正常に完了したか確認
+    if( xhr2.readyState === 4 && xhr2.status === 200) {
+
+      // (5) 取得したレスポンスをページに表示
+      const therapist = this.responseText.split("\r\n");
+      console.log(therapist)
+
+      if(therapist[2]=="新人"){
+        nameElement = '<div><img src="./icon/new.png" width="20px"height="20px" alt="Responsive image" class="img-fluid" style="display:inline-block;"/><h4 style="display:inline-block;">'+therapist[0]+'('+therapist[1]+'歳)</h4></div>'
+      }else{
+        nameElement = '<h4>'+therapist[0]+'('+therapist[1]+'歳)</h4>'
+      }
+
+      var mainElement = document.getElementById('mainDiv');
+      mainElement.insertAdjacentHTML('beforeend',
+      '<div align="center" class="col-lg-3">' +
+        '<a>' +
+          '<img src="./img/sampleA.png" width="200px"height="266px" alt="Responsive image" class="img-fluidhref">'+
+        '</a>'+
+        nameElement+
+        '<div>'+reserve+'</div>'+
+        '<div style="font-size:20px">'+timezone+'</div>'+
+      '</div>');
+    }
+  }
+}
+
+</script>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" type="text/javascript"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/dist/css/bootstrap.min.js">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand font-shoplogo" href="#">Makana a Anela</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./therapist.html">セラピスト</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./price.html">コース</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./reserve.html">予約</a>
+            <!--<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a class="navbar-brand">連絡先:000-0000-000</a>
+          <!--<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>-->
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- 動画用フラグ -->
+  <input type="checkbox" id="pu-on" style="visibility: collapse;width:0px; height:0px;" >
+  <div class="pu">
+    <label for="pu-on" class="icon-close" onclick="stopMovie()">×</label>
+    <!-- ポップアップの中身 -->
+    <div class="pu-content">
+    <video src="./movie/672153693.237564.mp4" controls alt="" id="movie" class="layer-video">
+      <!-- ./ポップアップの中身　ここまで -->
+    </div>
+  </div>
+
+  <div class="container px-1 py-2" id="featured-3">
+    <h2  align="center" class="pb-1 border-bottom">セラピスト</h2>
+  </div>
+
+  <div class="container accounts">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div align="center" class="col-lg-3">
+        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
+
+        <h3>名前(XX歳)</h3>
+        <p>2文・3文</p>
+        <p align="center"><a class="btn btn-lg btn-primary movieBtn" onclick="showVideo()">紹介動画</a></p>
+        <div class="twitterLink" id="twitter1">
+          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
+      </div><!-- /.col-lg-4 -->
+      <div align="center" class="col-lg-3">
+        <a ">
+          <img src="./img/sampleA.png" width="200px"height="266px" alt="Responsive image" class="img-fluidhref">
+        </a>
+
+        <h4>高橋　花子(20歳)</h4>
+        <p>22:00 ~ 26:00</p>
+        <div class="twitterLink" id="twitter2">
+          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div><!-- /.col-lg-4 -->
+      <div align="center" class="col-lg-3">
+        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
+
+        <h3>高橋　花子(20歳)</h3>
+        <p>22:00~23:00</p>
+        <div class="twitterLink" id="twitter3">
+          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+  
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+      
+  </body>
+</html>
+
+<script>
+   function showVideo(e){
+    var target = document.getElementById("pu-on");
+    target.style.display ="block"
+    target.checked = true;
+   }
+
+   function stopMovie(){
+    var video = document.getElementById("movie");
+    video.pause();
+
+    var target = document.getElementById("pu-on");
+    target.style.display ="none"
+   }
+</script>
