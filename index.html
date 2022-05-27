@@ -238,7 +238,7 @@
   <div class="container accounts">
     <!-- Three columns of text below the carousel -->
     <div class="row">
-      <div align="center" class="col-lg-3">
+      <div id="newby" align="center" class="col-lg-3">
         <!-- サイズ：1108 * 1478-->
         <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
 
@@ -260,7 +260,7 @@
   <div class="container accounts">
     <!-- Three columns of text below the carousel -->
     <div class="row">
-      <div align="center" class="col-lg-3">
+      <div id="therapists" align="center" class="col-lg-3">
         <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
 
         <h3>名前(XX歳)</h3>
@@ -396,9 +396,74 @@
   </footer>
   -->
 </main>
+<script>
 
+  window.onload = function(){
+    getAllMember("./member/allMember.txt");
+  }
+  function getAllMember(filePath){
 
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    const xhr = new XMLHttpRequest();
+    xhr.open('get', filePath);
+    xhr.send();
+
+    xhr.onreadystatechange = function() {
+
+      // (4) 通信が正常に完了したか確認
+      if( xhr.readyState === 4 && xhr.status === 200) {
+
+        // (5) 取得したレスポンスをページに表示
+        const words = this.responseText.split("\n");
+        console.log(words)
+        let cnt = 0;
+
+        // 好きなように処理します。
+        for (let i = 0; i < words.length; i++) {
+          createAllTherapist(words[i]);
+        }
+      }
+    }
+  }
+  
+  function createAllTherapist(therapistName){
+    let nameElement = '';
+  
+    const xhr2 = new XMLHttpRequest();
+    xhr2.open('get', "./member/"+therapistName+".txt");
+    xhr2.send();
+  
+    xhr2.onreadystatechange = function() {
+  
+      // (4) 通信が正常に完了したか確認
+      if( xhr2.readyState === 4 && xhr2.status === 200) {
+  
+        // (5) 取得したレスポンスをページに表示
+        const therapist = this.responseText.split("\n");
+        console.log(therapist)
+        var mainElement;
+  
+        if(therapist[2]=="新人"){
+          nameElement = '<div><img src="./icon/new.png" width="20px"height="20px" alt="Responsive image" class="img-fluid" style="display:inline-block;"/><h4 style="display:inline-block;">'+therapist[0]+'('+therapist[1]+'歳)</h4></div>'
+          mainElement = document.getElementById('newby');
+        }else{
+          nameElement = '<h4>'+therapist[0]+'('+therapist[1]+'歳)</h4>'
+          mainElement = document.getElementById('therapists');
+        }
+  
+        var mainElement = document.getElementById('mainDiv');
+        mainElement.insertAdjacentHTML('beforeend',
+        '<div align="center" class="col-lg-3">' +
+          '<a>' +
+            '<img src="./img/sampleA.png" width="200px"height="266px" alt="Responsive image" class="img-fluidhref">'+
+          '</a>'+
+          nameElement+
+          '<div>'+reserve+'</div>'+
+        '</div>');
+      }
+    }
+  }
+  
+  </script>
 
       
   </body>
