@@ -238,18 +238,7 @@
   <div class="container accounts">
     <!-- Three columns of text below the carousel -->
     <div class="row" id="newby">
-      <div align="center" class="col-lg-3">
-        <!-- サイズ：1108 * 1478-->
-        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
-
-        
-        <div><img src="./icon/new.png" width="20px"height="20px" alt="Responsive image" class="img-fluid" style="display:inline-block;"><h3 style="display:inline-block;">名前(XX歳)</h3></div>
-        <p>22:00 ~ 26:00</p>
-        <div class="twitterLink" id="twitter1">
-          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
-      </div><!-- /.col-lg-4 -->
+      
     </div><!-- /.row -->
   </div>
 
@@ -260,33 +249,7 @@
   <div class="container accounts">
     <!-- Three columns of text below the carousel -->
     <div class="row" id="therapists">
-      <div align="center" class="col-lg-3">
-        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
-
-        <h3>名前(XX歳)</h3>
-        <p>22:00 ~ 26:00</p>
-        <div class="twitterLink" id="twitter1">
-          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div>
-      <div align="center" class="col-lg-3">
-        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
-
-        <h3>高橋　花子(20歳)</h3>
-        <p>22:00 ~ 26:00</p>
-        <div class="twitterLink" id="twitter2">
-          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div><!-- /.col-lg-4 -->
-      <div align="center" class="col-lg-3">
-        <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
-
-        <h3>高橋　花子(20歳)</h3>
-        <p>22:00~23:00</p>
-        <div class="twitterLink" id="twitter3">
-          <a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div><!-- /.col-lg-4 -->
+      
     </div><!-- /.row -->
 
 
@@ -445,7 +408,7 @@
         var mainElement;
   
         if(therapist[2]=="新人"){
-          nameElement = '<div><img src="./icon/new.png" width="16px"height="16px" alt="Responsive image" class="img-fluid" style="display:inline-block;"/><h3 style="display:inline-block;">'+therapist[0]+'('+therapist[1]+'歳)</h3></div>'
+          nameElement = '<div><img src="./icon/new.png" width="20px"height="20px" alt="Responsive image" class="img-fluid" style="display:inline-block;"/><h3 style="display:inline-block;">'+therapist[0]+'('+therapist[1]+'歳)</h3></div>'
           mainElement = document.getElementById('newby');
         }else{
           nameElement = '<h3>'+therapist[0]+'('+therapist[1]+'歳)</h3>'
