@@ -448,14 +448,15 @@
           nameElement = '<h3>'+therapist[0]+'('+therapist[1]+'歳)</h3>'
           mainElement = document.getElementById('therapists');
         }
-  
+
+
         mainElement.insertAdjacentHTML('beforeend',
         '<div align="center" class="col-lg-3">'+
         '<img src="./img/'+therapist[3]+'" width="200px" height="266px" alt="Responsive image" class="img-fluid">'+
           nameElement+
         '<div class="twitterLink">'+
           therapist[6]+
-        '</div>');
+        '</div></div>');
       }
     }
   }

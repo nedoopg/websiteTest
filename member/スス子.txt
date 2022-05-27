@@ -4,4 +4,4 @@
 S__343465988.jpg
 672153693.237564.mp4
 一言二言
-<a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="twitterLink"><a href="https://twitter.com/shadow185376?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-lang="ja" data-show-count="false">Follow @shadow185376</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
