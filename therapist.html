@@ -129,10 +129,10 @@
 </html>
 
 <script>
-   function showVideo(e){
+   function showVideo(src){
     var video = document.getElementById('movie');
-    video.src = "./movie/"+e;
-    console.log("./movie/"+e);
+    video.src = "./movie/"+src;
+    console.log("./movie/"+src);
 
     var target = document.getElementById("pu-on");
     target.style.display ="block"
