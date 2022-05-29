@@ -77,7 +77,7 @@
 
   <div class="container accounts">
     <!-- Three columns of text below the carousel -->
-    <div class="row">
+    <div class="row" id="therapists">
       <div align="center" class="col-lg-3">
         <img src="./img/S__343465988.jpg" width="200px"height="266px" alt="Responsive image" class="img-fluid">
 
@@ -90,10 +90,7 @@
         <!--<p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>-->
       </div><!-- /.col-lg-4 -->
       <div align="center" class="col-lg-3">
-        <a ">
-          <img src="./img/sampleA.png" width="200px"height="266px" alt="Responsive image" class="img-fluidhref">
-        </a>
-
+         <img src="./img/sampleA.png" width="200px"height="266px" alt="Responsive image" class="img-fluidhref">
         <h4>高橋　花子(20歳)</h4>
         <p>22:00 ~ 26:00</p>
         <div class="twitterLink" id="twitter2">
@@ -133,6 +130,9 @@
 
 <script>
    function showVideo(e){
+    var video = document.getElementById('movie');
+    video.src = "./movie/"+e;
+
     var target = document.getElementById("pu-on");
     target.style.display ="block"
     target.checked = true;
@@ -145,4 +145,73 @@
     var target = document.getElementById("pu-on");
     target.style.display ="none"
    }
+
+window.addEventListener('DOMContentLoaded', function () {
+  getAllMember("./member/allMember.txt");
+});
+/*window.onload = function(){
+  getAllMember("./member/allMember.txt");
+}*/
+function getAllMember(filePath){
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('get', filePath);
+  xhr.send();
+
+  xhr.onreadystatechange = function() {
+
+    // (4) 通信が正常に完了したか確認
+    if( xhr.readyState === 4 && xhr.status === 200) {
+
+      // (5) 取得したレスポンスをページに表示
+      const words = this.responseText.split("\n");
+      console.log(words)
+      let cnt = 0;
+
+      // 好きなように処理します。
+      for (let i = 0; i < words.length; i++) {
+        createAllTherapist(words[i]);
+      }
+    }
+  }
+}
+
+function createAllTherapist(therapistName){
+  let nameElement = '';
+
+  const xhr2 = new XMLHttpRequest();
+  xhr2.open('get', "./member/"+therapistName+".txt");
+  xhr2.send();
+
+  xhr2.onreadystatechange = function() {
+
+    // (4) 通信が正常に完了したか確認
+    if( xhr2.readyState === 4 && xhr2.status === 200) {
+
+      // (5) 取得したレスポンスをページに表示
+      const therapist = this.responseText.split("\n");
+      console.log(therapist)
+      var mainElement;
+
+      if(therapist[2]=="新人"){
+        nameElement = '<div><img src="./icon/new.png" width="20px"height="20px" alt="Responsive image" class="img-fluid" style="display:inline-block;"/><h3 style="display:inline-block;">'+therapist[0]+'('+therapist[1]+'歳)</h3></div>'
+      }else{
+        nameElement = '<h3>'+therapist[0]+'('+therapist[1]+'歳)</h3>'
+      }
+      mainElement = document.getElementById('therapists');
+
+      mainElement.insertAdjacentHTML('beforeend',
+      '<div align="center" class="col-lg-3">'+
+      '<img src="./img/'+therapist[3]+'" width="200px" height="266px" alt="Responsive image" class="img-fluid">'+
+        nameElement+
+      '<p>'+therapist[5]+'</p>'+
+      '<p align="center"><a class="btn btn-lg btn-primary movieBtn" onclick="showVideo('+therapist[4]+')">紹介動画</a></p>'+
+      '<div class="twitterLink">'+
+        therapist[6]+
+      '</div></div>');
+
+      
+    }
+  }
+}
 </script>
