@@ -135,15 +135,15 @@
 window.onload = function(){
   test1(0);
   for(let j=0;j<7;j++){
-      var now = new Date();
-      now.setDate(now.getDate() + j);
-      var dayOfWeek = now.getDay() ;	// 曜日(数値)
-      var dayOfWeekStr = [ "日", "月", "火", "水", "木", "金", "土" ][dayOfWeek] ;	// 曜日(日本語表記)
-      var Day = ("0"+now.getDate()).slice(-2);
-      var Month =  ("0"+(now.getMonth() + 1)).slice(-2);
-      let btnElement = document.getElementById(j);
-      btnElement.value=Month+"/"+Day+"("+dayOfWeekStr+")";
-    }
+    var now = new Date();
+    now.setDate(now.getDate() + j);
+    var dayOfWeek = now.getDay() ;	// 曜日(数値)
+    var dayOfWeekStr = [ "日", "月", "火", "水", "木", "金", "土" ][dayOfWeek] ;	// 曜日(日本語表記)
+    var Day = ("0"+now.getDate()).slice(-2);
+    var Month =  ("0"+(now.getMonth() + 1)).slice(-2);
+    let btnElement = document.getElementById(j);
+    btnElement.value=Month+"/"+Day+"("+dayOfWeekStr+")";
+  }
 }
 
   function test1(e){
